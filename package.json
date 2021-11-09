@@ -1,0 +1,38 @@
+{
+  "name": "nexus-input-transformation",
+  "version": "1.0.0",
+  "description": "A package of tools for creating transformations of input arguments on nexus GraphQL resolvers",
+  "main": "index.js",
+  "author": "Daniel Raloff <dan.raloff@koan.co>",
+  "license": "ISC",
+  "private": false,
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "apollo-server-core": "^3.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^25.2.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "graphql": "^15",
+    "jest": "^27.3.1",
+    "nexus": "^1.1.0",
+    "prettier": "^2.4.1",
+    "semistandard": "^16.0.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  },
+  "peerDependencies": {
+    "graphql": "^15",
+    "nexus": "^1.1.0"
+  },
+  "scripts": {
+    "lint": "yarn eslint ./ -c .eslintrc.json --ext=.ts --quiet",
+    "test": "yarn jest --config ./jest.config.js"
+  }
+}
